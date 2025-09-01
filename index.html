@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layout e Cards</title>
+  <link rel="stylesheet" href="style.css">
+    <!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 bg-white text-gray">
+  <header class="nav">
+    <div class="container nav-content">
+      <div class="logo">LT</div>
+      <h1>Londrinense Tech</h1>
+      <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#cards">Atividade</a>
+        <a href="#exercicios">Exercícios</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Atividade: Praticando Layout</h2>
+        <p>Use apenas HTML e CSS para estilizar os componentes abaixo. Depois, tente recriar com Tailwind.</p>
+        <div class="buttons">
+          <a href="#cards" class="btn btn-primary">Começar</a>
+          <a href="#exercicios" class="btn btn-outline">Ver exercícios</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&w=800&q=60" alt="coding laptop">
+      </div>
+    </section>
+
+    <section id="cards">
+      <h3>Cartões — Grid responsivo</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-header">
+            <div class="icon">🧠</div>
+            <div>
+              <h4>Lógica de Programação</h4>
+              <p>Nível: Iniciante</p>
+            </div>
+          </div>
+          <p>Exercícios práticos para treinar algoritmos e estruturas de controle.</p>
+          <div class="card-actions">
+            <button>Ver</button>
+            <button class="btn-primary">Editar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="icon">🌐</div>
+            <div>
+              <h4>Desenvolvimento Web</h4>
+              <p>Nível: Intermediário</p>
+            </div>
+          </div>
+          <p class="">Crie páginas responsivas com HTML e CSS.</p>
+          <div class="card-actions">
+            <button>Ver</button>
+            <button class="btn-primary">Editar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="icon">🤖</div>
+            <div>
+              <h4>IA Básica</h4>
+              <p>Nível: Avançado</p>
+            </div>
+          </div>
+          <p>Introdução a conceitos de Machine Learning e experimentos simples.</p>
+          <div class="card-actions">
+            <button>Ver</button>
+            <button class="btn-primary">Editar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="exercicios">
+      <h3>Exercícios propostos</h3>
+      <ol>
+        <li>Transforme o layout em responsivo (2 colunas em telas médias, 3 em grandes).</li>
+        <li>Adicione um badge "Novo" no canto superior direito de um card.</li>
+        <li>Melhore os botões com efeitos de hover.</li>
+        <li>Crie uma versão com tema escuro.</li>
+        <li>Ajuste tipografia e cores para melhor contraste.</li>
+      </ol>
+    </section>
+
+    <footer>
+      © Londrinense Tech — Material de ensino
+    </footer>
+  </main>
+</body>
+</html>
